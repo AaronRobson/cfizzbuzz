@@ -1,15 +1,14 @@
-#include <stdbool.h>
 #include <stdio.h>
 
 void fizzBuzz(int value) {
-    bool shouldPrintNumber = true;
+    short shouldPrintNumber = 1;
     if (value % 3 == 0) {
         printf("Fizz");
-        shouldPrintNumber = false;
+        shouldPrintNumber = 0;
     }
     if (value % 5 == 0) {
         printf("Buzz");
-        shouldPrintNumber = false;
+        shouldPrintNumber = 0;
     }
     if (shouldPrintNumber) {
         printf("%d", value);
