@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("Fizz Buzz in C:\n");
     for (int i = 1; i <= 100; i++) {
         short shouldPrintNumber = 1;
         if (i % 3 == 0) {
