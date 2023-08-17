@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Werror -Wpedantic
+CFLAGS = -Wall -Werror -Wpedantic -s
 
 default: all
 
