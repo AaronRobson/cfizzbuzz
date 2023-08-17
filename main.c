@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    for (int i = 1; i <= 100; i++) {
-        short shouldPrintNumber = 1;
+    for (char i = 1; i <= 100; i++) {
+        char shouldPrintNumber = 1;
         if (i % 3 == 0) {
             printf("Fizz");
             shouldPrintNumber = 0;
