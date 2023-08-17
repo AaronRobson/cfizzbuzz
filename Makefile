@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Werror -Wpedantic -s -static
+CFLAGS = -Wall -Werror -Wpedantic -s -static -static-libgcc -static-libstdc++
 
 default: all
 
