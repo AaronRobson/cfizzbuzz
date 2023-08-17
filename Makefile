@@ -1,12 +1,16 @@
+CC = gcc
+CFLAGS = -Wall -Werror -Wpedantic
+
+default: all
+
 .PHONY: all
 all: build
 
 .PHONY: build
-build: main.o
-	gcc -Wall -Werror -Wpedantic -o cfizzbuzz main.o
+build: cfizzbuzz
 
-main.o: main.c
-	gcc -Wall -Werror -Wpedantic -c main.c -I ./
+cfizzbuzz: main.o
+	$(CC) $(CFLAGS) -o $@ $<
 
 .PHONY: clean
 clean:
